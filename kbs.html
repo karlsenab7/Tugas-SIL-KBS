@@ -1,0 +1,274 @@
+<html>
+
+<body>
+    <h3>Income Prediction Form</h3>
+
+    <div>
+        <form action="/result" method="POST">
+            <label for="id">Id</label>
+            <input type="text" id="id" name="id">
+            <br>
+            <label for="gender">Gender</label>
+            <select id="gender" name="gender">
+                <option value="0">Male</option>
+                <option value="1">Female</option>
+            </select>
+            <br>
+            <label for="age">Age</label>
+            <input type="number" id="age" name="age">
+            <br>
+            <label for="age_o">Age_O</label>
+            <input type="number" id="age_o" name="age_o">
+            <br>
+            <label for="d_age">D_age </label>
+            <input type="number" id="d_age" name="d_age">
+            <br>
+            <label for="samerace">Same Race?</label>
+            <select id="samerace" name="samerace">
+                <option value="0">Yes</option>
+                <option value="1">No</option>
+            </select>
+            <br>
+            <label for="important_same_race">Important Same Race </label>
+            <input type="number" id="important_same_race" name="important_same_race"> btw: [0-9]
+            <br>
+            <label for="important_same_religion">Important Same Religion </label>
+            <input type="number" id="important_same_religion" name="important_same_religion"> btw: [0-9]
+            <br>
+            <label for="field">Field</label>
+            <select id="field" name="field">
+                <option value="1">law</option>
+                <option value="2">economics</option>
+                <option value="3">masters in public administration</option>
+                <option value="4">masters of social work&education</option>
+                <option value="5">finance</option>
+                <option value="6">business</option>
+                <option value="7">political science</option>
+                <option value="8">money</option>
+                <option value="9">operations research</option>
+                <option value="10">tc [health ed]</option>
+                <option value="11">psychology</option>
+                <option value="12">social work</option>
+                <option value="13">speech language pathology</option>
+                <option value="14">educational psychology</option>
+                <option value="15">applied maths/econs</option>
+                <option value="16">mathematics</option>
+                <option value="17">statistics</option>
+                <option value="18">organizational psychology</option>
+                <option value="19">mechanical engineering</option>
+                <option value="20">finanace</option>
+                <option value="21">finance&economics</option>
+                <option value="22">undergrad - gs</option>
+                <option value="23">mathematical finance</option>
+                <option value="24">medicine</option>
+                <option value="25">mba</option>
+                <option value="26">?</option>
+                <option value="27">german literature</option>
+                <option value="28">business & international affairs</option>
+                <option value="29">mfa creative writing</option>
+                <option value="30">engineering</option>
+                <option value="31">electrical engineering</option>
+                <option value="32">classics</option>
+                <option value="33">operations research [seas]</option>
+                <option value="34">chemistry</option>
+                <option value="35">journalism</option>
+                <option value="36">elementary/childhood education [ma]</option>
+                <option value="37">microbiology</option>
+                <option value="38">masters of social work</option>
+                <option value="39">communications</option>
+                <option value="40">marketing</option>
+                <option value="41">international educational development</option>
+                <option value="42">education administration</option>
+                <option value="43">business [mba]</option>
+                <option value="44">computer science</option>
+                <option value="45">climate-earth and environ. science</option>
+                <option value="46">financial math</option>
+                <option value="47">business- mba</option>
+                <option value="48">religion</option>
+                <option value="49">film</option>
+                <option value="50">sociology</option>
+                <option value="51">economics; english</option>
+                <option value="52">economics; sociology</option>
+                <option value="53">polish</option>
+                <option value="54">english</option>
+                <option value="55">psychology and english</option>
+                <option value="56">biomedical engineering</option>
+                <option value="57">economics and political science</option>
+                <option value="58">art history/medicine</option>
+                <option value="59">philosophy</option>
+                <option value="60">marine geophysics</option>
+                <option value="61">theory</option>
+                <option value="62">nutrition/genetics</option>
+                <option value="63">neuroscience</option>
+                <option value="64">comparative literature</option>
+                <option value="65">international relations</option>
+                <option value="66">history of religion</option>
+                <option value="67">international affairs - economic development</option>
+                <option value="68">modern chinese literature</option>
+                <option value="69">business; marketing</option>
+                <option value="70">physics [astrophysics]</option>
+                <option value="71">physics</option>
+                <option value="72">business/ finance/ real estate</option>
+                <option value="73">biochemistry</option>
+                <option value="74">art education</option>
+                <option value="75">american studies [masters]</option>
+                <option value="76">biology</option>
+                <option value="77">cell biology</option>
+                <option value="78">math</option>
+                <option value="79">international affairs/finance</option>
+                <option value="80">international affairs</option>
+                <option value="81">international affairs/international finance</option>
+                <option value="82">health policy</option>
+                <option value="83">english and comp lit</option>
+                <option value="84">international finance and business</option>
+                <option value="85">sociomedical sciences- school of public health</option>
+                <option value="86">epidemiology</option>
+                <option value="87">international business</option>
+                <option value="88">medical informatics</option>
+                <option value="89">international finance; economic policy</option>
+                <option value="90">law and social work</option>
+                <option value="91">international development</option>
+                <option value="92">business/law</option>
+                <option value="93">clinical psychology</option>
+                <option value="94">religion; gsas</option>
+                <option value="95">international affairs and public health</option>
+                <option value="96">history</option>
+                <option value="97">business and international affairs [mba/mia dual degree]</option>
+                <option value="98">qmss</option>
+                <option value="99">climate change</option>
+                <option value="100">public administration</option>
+                <option value="101">ma biotechnology</option>
+                <option value="102">international affairs/business</option>
+                <option value="103">ecology</option>
+                <option value="104">master in public administration</option>
+                <option value="105">computational biochemsistry</option>
+                <option value="106">neurobiology</option>
+                <option value="107">mathematics; phd</option>
+                <option value="108">history [gsas - phd]</option>
+                <option value="109">biomedicine</option>
+                <option value="110">master of international affairs</option>
+                <option value="111">sociology and education</option>
+                <option value="112">elementary education</option>
+                <option value="113">american studies</option>
+                <option value="114">arts administration</option>
+                <option value="115">conservation biology</option>
+                <option value="116">japanese literature</option>
+                <option value="117">biotechnology</option>
+                <option value="118">earth and environmental science</option>
+                <option value="119">philosophy [ph.d.]</option>
+                <option value="120">philosophy and physics</option>
+                <option value="121">nutrition</option>
+                <option value="122">ma science education</option>
+                <option value="123">genetics</option>
+                <option value="124">law and english literature [j.d./ph.d.]</option>
+                <option value="125">french</option>
+                <option value="126">nutritiron</option>
+                <option value="127">gs postbacc premed</option>
+                <option value="128">art history</option>
+                <option value="129">molecular biology</option>
+                <option value="130">genetics & development</option>
+                <option value="131">electrical engg.</option>
+                <option value="132">business school</option>
+                <option value="133">international politics</option>
+                <option value="134">mba / master of international affairs [sipa]</option>
+                <option value="135">medicine and biochemistry</option>
+                <option value="136">social studies education</option>
+                <option value="137">ma teaching social studies</option>
+                <option value="138">education policy</option>
+                <option value="139">education- literacy specialist</option>
+                <option value="140">anthropology/education</option>
+                <option value="141">bilingual education</option>
+                <option value="142">speech pathology</option>
+                <option value="143">education</option>
+                <option value="144">math education</option>
+                <option value="145">tesol</option>
+                <option value="146">cognitive studies in education</option>
+                <option value="147">finance/economics</option>
+                <option value="148">museum anthropology</option>
+                <option value="149">environmental engineering</option>
+                <option value="150">business administration</option>
+                <option value="151">curriculum and teaching/giftedness</option>
+                <option value="152">anthropology</option>
+                <option value="153">instructional tech & media</option>
+                <option value="154">school psychology</option>
+                <option value="155">instructional media and technology</option>
+                <option value="156">sipa / mia</option>
+                <option value="157">english education</option>
+                <option value="158">ma in quantitative methods</option>
+                <option value="159">early childhood education</option>
+                <option value="160">architecture</option>
+                <option value="161">urban planning</option>
+                <option value="162">ed.d. in higher education policy at tc</option>
+                <option value="163">international security policy - sipa</option>
+                <option value="164">applied physiology & nutrition</option>
+                <option value="165">music education</option>
+                <option value="166">counseling psychology</option>
+                <option value="167">communications in education</option>
+                <option value="168">intellectual property law</option>
+                <option value="169">mba finance</option>
+                <option value="170">intrernational affairs</option>
+                <option value="171">business consulting</option>
+                <option value="172">business; media</option>
+                <option value="173">mfa -film</option>
+                <option value="174">higher ed. - m.a.</option>
+                <option value="175">neuroscience and education</option>
+                <option value="176">creative writing</option>
+                <option value="177">creative writing - nonfiction</option>
+                <option value="178">writing: literary nonfiction</option>
+                <option value="179">creative writing [nonfiction]</option>
+                <option value="180">nonfiction writing</option>
+                <option value="181">theatre management & producing</option>
+                <option value="182">financial engineering</option>
+                <option value="183">fundraising management</option>
+                <option value="184">business [finance & marketing]</option>
+                <option value="185">elementary education - preservice</option>
+                <option value="186">education leadership - public school administration</option>
+                <option value="187">mfa writing</option>
+                <option value="188">international affairs - economic policy</option>
+                <option value="189">sipa - energy</option>
+                <option value="190">public policy</option>
+                <option value="191">law/business</option>
+                <option value="192">mfa poetry</option>
+                <option value="193">soa -- writing</option>
+                <option value="194">biomedical informatics</option>
+                <option value="195">working</option>
+                <option value="196">consulting</option>
+                <option value="197">human rights: middle east</option>
+                <option value="198">human rights</option>
+                <option value="199">sipa-international affairs</option>
+                <option value="200">teaching of english</option>
+                <option value="201">gsas</option>
+                <option value="202">african-american studies/history</option>
+                <option value="203">neurosciences/stem cells</option>
+                <option value="204">theater</option>
+                <option value="205">biology phd</option>
+                <option value="206">biochemistry/genetics</option>
+                <option value="207">stats</option>
+                <option value="208">math of finance</option>
+                <option value="209">mfa acting program</option>
+                <option value="210">biochemistry & molecular biophysics</option>
+                <option value="211">acting</option>
+                <option value="212">social work/sipa</option>
+                <option value="213">public health</option>
+                <option value="214">industrial engineering</option>
+                <option value="215">industrial engineering/operations research</option>
+                <option value="216">masters of industrial engineering</option>
+                <option value="217">mba - private equity / real estate</option>
+                <option value="218">general management/finance</option>
+                <option value="219">climate dynamics</option>
+            </select>
+            <label for="expected_happy_with_sd_people">expected_happy_with_sd_people </label>
+            <input type="number" id="expected_happy_with_sd_people" name="expected_happy_with_sd_people"> btw: [0-10]
+            <br>
+            <label for="expected_num_interested_in_me">expected_num_interested_in_me </label>
+            <input type="number" id="expected_num_interested_in_me" name="expected_num_interested_in_me"> btw: [0-20]
+            <br>
+            <label for="expected_num_matches">expected_num_matches </label>
+            <input type="number" id="expected_num_matches" name="expected_num_matches"> btw: [0-18]
+            <br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+
+</html>
