@@ -4,10 +4,7 @@
     <h3>SpeedDating Matches Form</h3>
 
     <div>
-        <form action="/Tugas-SIL-KBS/speedDating-match-prediction/templates/result.html" method="POST">
-            <label for="id">Id</label>
-            <input type="text" id="id" name="id">
-            <br>
+        <form action="/Tugas-SIL-KBS/speedDating-match-prediction/templates/result" method="POST">
             <label for="gender">Gender</label>
             <select id="gender" name="gender">
                 <option value="0">Male</option>
@@ -15,13 +12,13 @@
             </select>
             <br>
             <label for="age">Age</label>
-            <input type="number" id="age" name="age">
+            <input type="text" id="age" name="age">
             <br>
             <label for="age_o">Age_O</label>
-            <input type="number" id="age_o" name="age_o">
+            <input type="text" id="age_o" name="age_o">
             <br>
             <label for="d_age">D_age </label>
-            <input type="number" id="d_age" name="d_age">
+            <input type="text" id="d_age" name="d_age">
             <br>
             <label for="samerace">Same Race?</label>
             <select id="samerace" name="samerace">
@@ -30,10 +27,10 @@
             </select>
             <br>
             <label for="important_same_race">Important Same Race </label>
-            <input type="number" id="important_same_race" name="important_same_race"> btw: [0-9]
+            <input type="text" id="important_same_race" name="important_same_race"> btw: [0-9]
             <br>
             <label for="important_same_religion">Important Same Religion </label>
-            <input type="number" id="important_same_religion" name="important_same_religion"> btw: [0-9]
+            <input type="text" id="important_same_religion" name="important_same_religion"> btw: [0-9]
             <br>
             <label for="field">Field</label>
             <select id="field" name="field">
@@ -257,15 +254,6 @@
                 <option value="218">general management/finance</option>
                 <option value="219">climate dynamics</option>
             </select>
-            <label for="expected_happy_with_sd_people">expected_happy_with_sd_people </label>
-            <input type="number" id="expected_happy_with_sd_people" name="expected_happy_with_sd_people"> btw: [0-10]
-            <br>
-            <label for="expected_num_interested_in_me">expected_num_interested_in_me </label>
-            <input type="number" id="expected_num_interested_in_me" name="expected_num_interested_in_me"> btw: [0-20]
-            <br>
-            <label for="expected_num_matches">expected_num_matches </label>
-            <input type="number" id="expected_num_matches" name="expected_num_matches"> btw: [0-18]
-            <br>
             <input type="submit" value="Submit">
         </form>
     </div>
