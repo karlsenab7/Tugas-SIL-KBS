@@ -3,15 +3,18 @@
 ### How to Run : 
 1. open cmd
 2. make a virtual env
-```mkdir income-prediction
+```
+mkdir income-prediction
 cd income-prediction
 python3 -m venv venv
 ```
 3. activate env
-```source venv/bin/activate
+```
+source venv/bin/activate
 ```
 4. install flask on env
-```pip install flask
+```
+pip install flask
 ```
 5. type "flask run" 
 6. Click the link to the web 
