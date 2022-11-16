@@ -31,10 +31,6 @@ col_names = df.columns.drop(['match'])
 X_train, X_test, y_train, y_test = train_test_split(
 		df[col_names], df['match'], test_size = 0.3, random_state = 100)
 
-clf = tree.DecisionTreeClassifier()
-clf = clf.fit(X_train, y_train)
-r_predict = clf.predict(X_test)
-
 clf_gini = DecisionTreeClassifier(criterion = "gini",
                                      random_state = 100,
                                      max_depth = 5,
@@ -43,8 +39,6 @@ clf_gini = DecisionTreeClassifier(criterion = "gini",
 clf_gini.fit(X_train, y_train)
 y_pred_gini = clf_gini.predict(X_test)
  
-acc = accuracy_score(y_test, r_predict) * 100
-f1 = f1_score(y_test, r_predict) * 100
 acc_gini = accuracy_score(y_test, y_pred_gini) * 100
 print("Accuracy Score: ", acc,"%")
 print("F1 Score: ", f1,"%")
