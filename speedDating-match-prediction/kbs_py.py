@@ -4,6 +4,14 @@ from sklearn.model_selection import train_test_split
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.metrics import accuracy_score, f1_score
 
+import os
+import sys
+import pickle
+
+def get_script_path():
+    return os.path.dirname(os.path.realpath(sys.argv[0]))
+
+
 df = pandas.read_csv('speedDating.csv', low_memory=False)
 
 fields = df.field.str.lower().unique()
@@ -42,3 +50,8 @@ print("Accuracy Score: ", acc,"%")
 print("F1 Score: ", f1,"%")
 print ("Accuracy scrore using Gini: ",
              acc_gini,"%" )
+print()
+
+filePath = sys.path[0] + "speedDating-match-prediction\model.pkl"
+pickle.dump(clf_gini, open(filePath, 'wb'))
+print("saved to", filePath)
